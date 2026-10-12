@@ -1,25 +1,106 @@
 aid: fort-robotics
+
 name: Fort Robotics
-description: 'Fort Robotics is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by lemnos-labs) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.fortrobotics.com/hubfs/FORT%20Robotics%20Trust%20Layer%20for%20Physical%20AI.webp
+
+description: Fort Robotics provides a trust layer for physical AI, delivering safety and remote control solutions for robotics and autonomous
+  systems. Their modular platform includes hardware like Safe Remote Control Pro, software such as FORT Manager, and services ranging from safety
+  architecture to fleet analytics. Backed by Lemnos Labs, the company focuses on integrating safety into AI-driven physical devices, enabling
+  secure deployment and operation across industries.
+
 url: https://raw.githubusercontent.com/api-evangelist/fort-robotics/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-12 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-12'
+
 modified: '2026-10-12'
+
 tags:
 - Company
-apis: []
+- Robotics
+- AI
+- Safety
+- Platform
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- lemnos-labs
+
 common:
+- type: Documentation
+  url: https://developer.fortrobotics.com/
+- type: ChangeLog
+  url: changelog/fort-robotics-changelog.yml
+- type: Authentication
+  url: authentication/fort-robotics-authentication.yml
+- type: Conformance
+  url: conformance/fort-robotics-conformance.yml
+- type: Hosts
+  url: hosts/fort-robotics-hosts.yml
+- type: Vendors
+  url: vendors/fort-robotics-vendors.yml
+- type: GettingStarted
+  url: https://developer.fortrobotics.com/getting_started
+- type: DomainSecurity
+  url: security/fort-robotics-domain-security.yml
 - type: Website
   url: https://www.fortrobotics.com
+- type: Blog
+  url: https://www.fortrobotics.com/news
+- type: TermsOfService
+  url: https://www.fortrobotics.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.fortrobotics.com/privacy-policy
+
+apis:
+- name: FORT Manager API
+  description: FORT Manager API provides programmatic access to Fort Robotics' trust layer for physical AI, enabling safety controls and fleet
+    analytics.
+  humanURL: https://developer.fortrobotics.com/api/v1
+  aid: fort-robotics:fort-manager-api
+- aid: fort-robotics:fort-robotics-api
+  name: Fort Robotics API
+  description: 'Fort Robotics API as documented publicly: 0 operations. Contract generated from the documentation by API Evangelist (2026-10-12);
+
+    not the provider''s own document.'
+  humanURL: https://developer.fortrobotics.com
+  baseURL: https://platform.fortrobotics.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/fort-robotics-openapi-generated.yml
+    x-provenance: generated
+
+x-backed-by:
+- lemnos-labs
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-12'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://www.fortrobotics.com/mcp
+    status: 403
+  - url: https://fortrobotics.com/mcp
+    status: 403
+  - url: https://www.fortrobotics.com
+    status: 200
+x-enrichment:
+  date: '2026-10-12'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

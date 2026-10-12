@@ -1,0 +1,23 @@
+generated: '2026-10-12'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://developer.fortrobotics.com/release_notes
+sources:
+- https://developer.fortrobotics.com/release_notes
+entries:
+- breaking: false
+  highlights:
+  - Confirm Configuration Action endpoint. Used to update FORT Manager when a configuration has been applied
+  - Fix image upload on Update Device and Register Device endpoints.
+  version: v1.0.6
+- breaking: false
+  highlights:
+  - Return DevicesThatNeedBlankConfig field on endpoints that modify configurations. This field is used to notify users of configurations that
+    will still listen to the safety sender until they are either powered off or have a blank configuration applied.
+  - Delete Configuration
+  - Delete device from a configuration (when removing a receiver)
+  - Confirm Firmware Action endpoint. Used to update FORT Manager when a firmware has been applied
+  version: v1.0.3
+current_version: v1.0.6
+note: Versioning scheme follows the pattern vMAJOR.MINOR.PATCH.
+docs: https://developer.fortrobotics.com/release_notes

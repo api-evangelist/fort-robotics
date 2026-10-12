@@ -1,0 +1,63 @@
+generated: '2026-10-12'
+method: probed
+source:
+  - https://www.fortrobotics.com/privacy-policy
+signals:
+  data_subject_request:
+    - evidence:
+        - source: https://www.fortrobotics.com/privacy-policy
+          http_status: 200
+          fetched: /tmp/privacy.html
+          quote: "We may collect personal information, such as email address, phone number, or mailing address when you request information about our Services, register for our newsletter, request customer or technical support, or otherwise communicate with us."
+      note: Describes collection when user requests info, indicating subject request handling.
+    - evidence:
+        - source: https://www.fortrobotics.com/privacy-policy
+          http_status: 200
+          fetched: /tmp/privacy.html
+          quote: "Access Your Personal Information, including: (i) obtaining access to or a copy of your personal information; and ... the right of data portability."
+      note: Provides right of access and data portability.
+    - evidence:
+        - source: https://www.fortrobotics.com/privacy-policy
+          http_status: 200
+          fetched: /tmp/privacy.html
+          quote: "Request Correction of your personal information where it is inaccurate or incomplete."
+      note: Right to correct data.
+    - evidence:
+        - source: https://www.fortrobotics.com/privacy-policy
+          http_status: 200
+          fetched: /tmp/privacy.html
+          quote: "Request Deletion of your personal information."
+      note: Right to delete data.
+    - evidence:
+        - source: https://www.fortrobotics.com/privacy-policy
+          http_status: 200
+          fetched: /tmp/privacy.html
+          quote: "Request Restriction of or Object to our processing of your personal information."
+      note: Right to restrict processing.
+    - evidence:
+        - source: https://www.fortrobotics.com/privacy-policy
+          http_status: 200
+          fetched: /tmp/privacy.html
+          quote: "Withdraw your Consent to our processing of your personal information."
+      note: Right to withdraw consent.
+  data_retention:
+    - evidence:
+        - source: https://www.fortrobotics.com/privacy-policy
+          http_status: 200
+          fetched: /tmp/privacy.html
+          quote: "We store the personal information we collect as described in this Privacy Policy for as long as you use our Services, or as necessary to fulfill the purpose(s) for which it was collected..."
+      note: Describes retention period.
+  data_residency:
+    - evidence:
+        - source: https://www.fortrobotics.com/privacy-policy
+          http_status: 200
+          fetched: /tmp/privacy.html
+          quote: "All information processed by us may be transferred, processed, and stored anywhere in the world, including, but not limited to, the United States or other countries..."
+      note: Indicates cross‑border data transfers.
+  incident_notification:
+    - evidence:
+        - source: https://www.fortrobotics.com/privacy-policy
+          http_status: 200
+          fetched: /tmp/privacy.html
+          quote: "We may access, preserve, and disclose any information we store associated with you to external parties if we, in good faith, believe doing so is required or appropriate to: comply with law enforcement or national security requests and legal process..."
+      note: Shows they will disclose in response to legal requests, implying incident handling.

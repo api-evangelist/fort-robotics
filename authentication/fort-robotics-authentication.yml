@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://developer.fortrobotics.com/getting_started
+sources:
+- https://developer.fortrobotics.com/getting_started
+description: Authentication for the Fort Robotics API
+schemes:
+- type: apiKey
+  name: Authorization
+  evidence: To authenticate your requests, include the API key in the Authorization header of your HTTP request, prefixed with Bearer.
+  location: header
+  header: Authorization
+  how_to_obtain: Generate an API key from the FORT Manager web application (API Key Management page).
+note: No OAuth2, http-bearer, http-basic, jwt, hmac, mtls, or other schemes are documented on the page.
+docs: https://developer.fortrobotics.com/getting_started

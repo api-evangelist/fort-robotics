@@ -1,0 +1,60 @@
+generated: '2026-10-12'
+method: probed
+source: pre-flight dossier (docs platform, portal detections) + CNAME chains and response headers of the hosts apis.yml names
+registry: all/0-working/vendors.yml
+areas_vocabulary:
+- documentation
+- developer-portal
+- api-gateway
+- cdn
+- hosting
+- sdk-generation
+- api-collections
+- status-page
+- support
+- community
+- identity
+- mcp-hosting
+vendors:
+- vendor: zuplo
+  name: Zuplo
+  area: api-gateway
+  host: platform.fortrobotics.com
+  evidence: cname:zuplo.app
+  signal: cname
+  confidence: high
+  kin_score:
+  - openapi_published
+- vendor: cloudflare
+  name: Cloudflare
+  area: cdn
+  host: www.fortrobotics.com
+  evidence: header:cf-ray
+  signal: header
+  confidence: high
+  kin_score:
+  - https_enforced
+  - hsts
+- vendor: hubspot
+  name: HubSpot
+  area: hosting
+  host: www.fortrobotics.com
+  evidence: cname:hubspot.net
+  signal: cname
+  confidence: high
+  kin_score: []
+reliance:
+  areas_vendor_served:
+  - api-gateway
+  - cdn
+  - hosting
+  vendor_count: 3
+  areas_observed: 12
+  share_of_observable_areas: 0.25
+  note: areas where a third party was DETECTED serving this provider; an area absent here was either self-run or not observed, and this script
+    cannot tell those apart
+checked:
+- 'docs-platform: no-docs-host'
+- developer.fortrobotics.com (GettingStarted)
+- www.fortrobotics.com (Website)
+- platform.fortrobotics.com (baseURL)

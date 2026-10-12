@@ -1,0 +1,33 @@
+openapi: 3.1.0
+info:
+  title: Fort Robotics API
+  version: '2026-10-12'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-12: 0 operation(s) read from 3 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; Fort Robotics has published no machine-readable contract that
+    the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 6
+    documentation: -6
+    pages-with-code: 3
+    pages-read: 3
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-12'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developer.fortrobotics.com
+  - https://developer.fortrobotics.com/examples
+  - https://developer.fortrobotics.com/getting_started
+servers:
+- url: https://platform.fortrobotics.com
+paths: {}
+components:
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+security:
+- bearer: []
+tags: []
