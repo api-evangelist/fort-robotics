@@ -1,0 +1,17 @@
+{
+  "provider": "fort-robotics",
+  "sources": [
+    "_ae-authored/fort-robotics-openapi-generated.yml"
+  ],
+  "outputs": [],
+  "archived": [],
+  "errors": [],
+  "warnings": [
+    "produced no outputs (1 source(s) have no operations) \u2014 sources left in place rather than archived"
+  ],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "fort-robotics-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0"
+  ],
+  "skipped": []
+}
